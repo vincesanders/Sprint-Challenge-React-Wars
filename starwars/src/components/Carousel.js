@@ -34,10 +34,25 @@ const Carousel = props => {
             <Card   name={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].name} 
                     height={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].height} 
                     mass={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].mass} 
-                    species={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].species} 
-                    films={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].films} />
-            <Card name='Luke Skywalker' height='172' mass='77' species='human' films={placeholderFilmArray} />
-            <Card name='Luke Skywalker' height='172' mass='77' species='human' films={placeholderFilmArray} />
+                    gender={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].gender}
+                    hairColor={props.dataArray[0] === undefined ? 'Loading...' : props.dataArray[0].hair_color}
+                    // species={props.species[0] === undefined ? 'Loading...' : props.species} 
+                    // films={props.films[0] === undefined ? 'Loading...' : props.films} charId={0} 
+                    />
+            <Card 
+                name={props.dataArray[1] === undefined ? 'Loading...' : props.dataArray[1].name} 
+                height={props.dataArray[1] === undefined ? 'Loading...' : props.dataArray[1].height} 
+                mass={props.dataArray[1] === undefined ? 'Loading...' : props.dataArray[1].mass} 
+                gender={props.dataArray[1] === undefined ? 'Loading...' : props.dataArray[1].gender}
+                hairColor={props.dataArray[1] === undefined ? 'Loading...' : props.dataArray[1].hair_color}  
+            />
+            <Card
+                name={props.dataArray[2] === undefined ? 'Loading...' : props.dataArray[2].name} 
+                height={props.dataArray[2] === undefined ? 'Loading...' : props.dataArray[2].height} 
+                mass={props.dataArray[2] === undefined ? 'Loading...' : props.dataArray[2].mass} 
+                gender={props.dataArray[2] === undefined ? 'Loading...' : props.dataArray[2].gender}
+                hairColor={props.dataArray[2] === undefined ? 'Loading...' : props.dataArray[2].hair_color}              
+            />
             <CarouselButton>{nextBtnText}</CarouselButton>
         </CarouselContainer>
     );
